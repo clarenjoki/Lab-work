@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+       <form name="registration_form" action="SaveDetails" method="POST">
+                                  Student ID: <input type="number" name="ID" placeholder="Enter Student ID  here" required ></br>
+				  </br>First name:<input type="text" name="f_name" placeholder="Enter first name here" required ></br>
+                                  </br>Last name:<input type="text" name="last_name" placeholder="Enter last name here" required ></br>
+				  </br>Gender:  <input type="radio" required name="Gender" value="male" checked> Male
+  						   <input type="radio" required name="Gender" value="female">Female</br>
+  				  </br>Degree Program: <select name="Program" required>
+                                                                    <option value="">--Select Program--</option>
+                                                                    <option value="BBIT">Bachelor of Business and Information Technology</option>
+                                                                    <option value="ICS">Bachelor of Informatics and Computer Science</option>
+                                                                    <option value="BCOMM">Bachelor of Commerce</option>
+                                                                    <option value="BBM">Bachelor of Business Management</option>
+										  </select></br>
+				    <!---Submit button-->
+				   </br> <input type="submit" name="submit_button" value="Register">
+		</form>
+    </body>
+</html>
